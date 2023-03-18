@@ -1,0 +1,381 @@
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+        <style>
+            section{
+                scroll-margin: 50px;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-image: url(back.jpg);
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            
+            .divi a{
+                list-style: none;
+                margin-left:1.5rem;
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+            }
+            .divi a{
+                text-decoration: none;
+                color: rgb(252, 252, 252);
+                font-weight: 500;
+                transition: color 0.3 ease-in-out;
+            }
+            .divi a:hover{
+                color: rgb(5, 244, 21);
+                transition: color 0.3s ease-in-out;
+                font-weight: 1000;
+            }
+            .main-title{
+                text-align: center;
+                font-family:'lucida handwriting'; 
+                font-weight:3000;
+                margin-top: 50px;
+                color: rgb(1, 15, 15);
+            }
+            .navbar{
+                
+                background-color: black;
+                padding: 20px;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                scroll-behavior: smooth;
+                
+            }
+            .divi{
+                position: relative;
+                text-align: center;
+            }
+            .showcase-area {
+                 height: 100vh;
+                 
+                
+                     background-image: url("back2.jpg");
+                     background-size: cover;
+                      background-position: center;
+                     background-repeat: no-repeat;
+                     background: linear-gradient();
+                      }
+            
+        
+            .showcase-container {
+                display: flex;
+                
+                flex-direction: column;
+                align-items: center;
+                 justify-content: center;
+                 height: 100%;
+                font-size: 1.6rem;
+                }
+
+            .main-title {
+                text-transform: uppercase;
+             margin-top: 10px;
+             text-shadow: 5px 10px 10px white ;
+             font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .about-us{
+                padding: 50px;
+                text-align: center;
+                color: aliceblue;
+               
+               
+                
+            }
+            .about-us h3{
+                margin-top: 20px;
+                font-family: 'condiment';
+            }
+            .about-us p{
+                margin-top: 10px;
+                font-weight: 500;
+            }
+            
+            .menu-title{
+                font-size: 30px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-align: center;
+                color: aliceblue;
+                font-weight: 700;
+            }
+            .all-cards{
+                max-width: 200px;
+                height: 200px;
+                border-radius: 30px;
+                box-shadow: 3px 5px 5px black;
+                transition: 0.3s ease-in-out;
+            }
+            .all-cards:hover{
+                transform: scale(1.05);
+                box-shadow: 3px 5px 5px black;
+                transition: 0.3s ease-in-out;
+            }
+            .work{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+                grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+                margin:100px auto;
+                max-width: 1100px;
+            }
+            .grid-items{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content:space-around;
+                align-items:center;
+                gap: 70px;
+                min-height: 300px;
+                
+            }
+            .info{
+                margin-top: -20px;
+                padding: 20px;
+                width: 200px;
+                background-color: aliceblue;
+                border-radius: 0px 0px 20px 20px;
+            }
+            .card1{
+
+                border-radius: 20px 20px 0px 0px;
+            }
+
+            .info p{
+                margin-top: 10px;
+            }
+            .footer{
+                color: white;
+                text-align: center;
+            }
+            .footer h2{
+                margin-top: 10px;
+            }
+            .footer p{
+                margin: 20px auto;
+                line-height: 1px;
+            }
+            
+            
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            
+           <div class="divi" id="navDemo">
+        
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact us</a>
+            
+            </div>
+        </nav>
+
+       <section class="showcase-area" id="home">
+            <div class="showcase-container">
+                <h1 class="main-title">Indian Street Food</h1>
+                <p>The Taste Of India</p>
+                
+            </div>
+        </section>
+
+        </br><section class="about-us" id="about">
+               <h1 class="about-1">About Us</h1>
+               <h3 >Serving From Last 10 years</h3>
+               <p>
+                Have you passed over any street and drawn 
+                towards food and immediately stopped and relished
+                 that savory meal? If you did, then be proud to call yourself a ‘Foodie’.
+            </p>
+        </section>
+
+        </br>
+            <div>
+                <p class="menu-title" id="menu">Menu</p>
+
+            </div>
+            
+           
+            </br> <section class="work">
+                <div class="grid-items">
+                <div class="all-cards">
+                <div >
+                    <img src="vpav.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Vada Pav</h1>
+                    <p>Burger is nothing but,
+                        Vada pav's NRI cousin
+                    </p>
+                </div>
+            </div>
+
+            <div class="all-cards">
+                <div>
+                    <img src="pavbhaji.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Pav Bhaji</h1>
+                    <p>Keep Calm And Eat Pav Bhaji
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="panipuri.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Pani Puri</h1>
+                    <p>Life Is Like PaniPuri 
+                        Everybody Have There Own Way To 
+                        Enjoy It.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="jalebi.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Jalebi</h1>
+                    <p>Uljhane bhi meethi ho sakti hai.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="samosa.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Samosa</h1>
+                    <p>The best triangle for taste angle.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="misal.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Misal Pav</h1>
+                    <p>Bad day? Misal Pav,
+                       Good day? Misal Pav.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="poha.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Pohe</h1>
+                    <p>When life gives you lemon,
+                        Get your poha plate 
+                        & squeeze over it!
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="ragda.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Ragda Patties</h1>
+                    <p>Bhaiya ragda kaisa diya?
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="dhokla.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Dhokla</h1>
+                    <p>Dhoka nahi Dhokla khao.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="dosa.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Masala Dosa</h1>
+                    <p>What is masala dosa?
+                        It's potato wrapped in love.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="dabeli.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Dabeli</h1>
+                    <p>What happens after eating Dabel?
+                        It goes to Da-beli.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="all-cards">
+                <div>
+                    <img src="bhel.jpg" class="card1" width="200">
+                </div>
+                 <div class="info">
+                    <h1>Bhel</h1>
+                    <p>Life is like Bhel-puri with bitter gourd.
+                    </p>
+                </div>
+            </div>
+                </div>
+            </section>
+        
+            <hr><footer class="footer" id="contact">
+                <h1>Contact Us</h1>
+                <h2>Indian Street Food</h2>
+                <p>+918237882432
+                </p>
+                <p>kolivk11@gmail.com</p>
+
+            </footer>
+
+            <script>
+                function toggleFunction() {
+                var x = document.getElementById("navDemo");}
+    
+            </script>
+    
+            
+       
+    </body>
+</html>
